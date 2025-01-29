@@ -1,0 +1,249 @@
+/* General styling for popup */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  width: 350px;
+  height: 500px; /* Set a fixed height to avoid excessive scrolling */
+  overflow-y: auto;
+}
+
+/* Header styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Close button styling */
+#close-tabs {
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px;
+  background: #ffffff;
+  color: #007bff;
+  border: 2px solid #000;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#close-tabs:hover {
+  background: #007bff;
+  color: #ffffff;
+}
+
+/* Instructions container */
+#instructions-container {
+  display: flex;
+  justify-content: center;
+}
+
+#instructions {
+  background: white;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%; /* Make width consistent */
+  text-align: left;
+  font-size: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#instructions ul {
+  list-style-type: disc;
+  padding-left: 15px;
+  margin: 0;
+}
+
+#instructions li {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+/* Footer styling - placed below close button */
+#footer {
+  text-align: center;
+  font-size: 12px;
+  color: whitesmoke;
+  padding-top: 10px;
+}
+
+#footer p {
+  margin: 0;
+}
+
+.donation-link {
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+}
+
+.donation-link:hover {
+  color: greenyellow;
+}
+
+.report-issue-link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* Tab list section */
+#tabs-list {
+  margin-top: 240px; /* Adjusted to prevent overlap with header */
+  padding: 10px;
+}
+
+/* Tab group styles */
+.tab-group {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  background: #f9f9f9;
+}
+
+.tab-group-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-group-header h2 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.select-all-checkbox {
+  margin-right: 8px;
+  width: 12px;
+  height: 12px;
+}
+
+.toggle-button {
+  font-size: 16px;
+  cursor: pointer;
+  color: #007bff;
+  margin-left: 5px;
+}
+
+/* Tab items styling */
+.tab-items-container {
+  margin-top: 5px;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-item:hover {
+  background-color: #f0f0f0;
+}
+
+.tab-checkbox {
+  margin-right: 5px;
+}
+
+/* Updated sound icon to appear right after the checkbox */
+.sound-icon {
+  font-size: 14px;
+  cursor: pointer;
+  color: red;
+  margin-left: 5px;
+}
+
+.sound-icon:hover {
+  color: #ff0000;
+}
+
+.tab-label {
+  cursor: pointer;
+  flex-grow: 1;
+  font-size: 12px; /* Reduced font size for better layout */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px; /* Space between icon and text */
+}
+
+label:hover {
+  color: #007bff;
+}
+
+span {
+  margin-left: 5px;
+  font-weight: bold;
+  color: red;
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 4px 10px;
+  background-color: #f9f9f9;
+  margin: 6px auto 4px;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  font-size: 14px;
+  padding: 5px;
+  background: transparent;
+}
+
+#search-status {
+  font-size: 12px;
+  color: #666;
+  margin: 0 8px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.nav-btn:hover {
+  color: #000;
+}
+
+/* Highlight matched tabs */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}

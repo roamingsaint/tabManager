@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="instructions-container">
+            <div id="instructions">
+                <h1>Tab Manager</h1>
+                <ul>
+                    <li>Use ✅ to select/deselect tabs and 'Close' them.</li>
+                    <li>🖱 Click on a tab title to switch to it.</li>
+                    <li>Click 🔊/🔇 to mute / unmute the tab.</li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search tabs..." />
+            <span id="search-status">0/0</span>
+            <button id="prev-match" class="nav-btn">▲</button>
+            <button id="next-match" class="nav-btn">▼</button>
+        </div>
+
+        <button id="close-tabs">Close Selected Tabs</button>
+
+        <div id="footer">
+            © Kanad Rishiraj
+              |  
+            ☕ Buy Me a 
+            <a href="https://buymeacoffee.com/RoamingSaint" target="_blank" class="donation-link">Coffee</a> 
+            / 
+            <a href="https://ko-fi.com/RoamingSaint" target="_blank" class="donation-link">Ko-fi</a>
+              |  
+            <a href="#" id="report-issue-link" class="report-issue-link">Report Issue</a>
+        </div>
+    </header>
+
+    <div id="tabs-list"></div>
+    <script src="tabs.js"></script>
+</body>
+</html>
